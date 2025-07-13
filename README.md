@@ -72,4 +72,15 @@ println 'Done!'
 
 -------------------------------------------------------------------------------------------------------------------
 
+**Cell classification** using the measurements obtained from the StarDist
+
+After running the StarDist, detected cells can be used to train a cell classifier.
+
+1. To start, click on the Classify tab -> Object classification -> Train object classification
+
+2. Annotate the detected cells using the available tools like brush, wand, etc in QuPath.
+
+3. 
+
+
 
