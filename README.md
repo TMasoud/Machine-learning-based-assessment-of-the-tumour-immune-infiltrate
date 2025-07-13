@@ -7,7 +7,7 @@ This is the repository for the assessment of tumor immune infiltrate using QuPat
 
 **Step 2**: Create a QuPath project. You can find the instructions here: https://qupath.readthedocs.io/en/stable/docs/tutorials/projects.html#create-a-project
 
-**Step 3**: Annotate the image areas (https://qupath.readthedocs.io/en/stable/docs/tutorials/cell_detection.html#annotate-a-region-of-interest) or load the annotation files
+**Step 3**: Annotate the image areas (https://qupath.readthedocs.io/en/stable/docs/tutorials/cell_detection.html#annotate-a-region-of-interest) or load the annotation files.
 
 **Step 4**: Save the project for the further analysis.
 
@@ -16,6 +16,8 @@ This is the repository for the assessment of tumor immune infiltrate using QuPat
 ## **Color deconvolution** to mitigate stain variabilitis in images
 
 1. Draw a small rectangle in an area that is representative of the stain you want to characterize – or the background.
+
+
 
 2. Double-click on the corresponding stain (or background) under the Image tab and follow the prompts to update the vectors.
 
