@@ -84,6 +84,8 @@ println 'Done!'
 
 5. Measurements can be exported from the Measure tab -> Show annotation/detection measurements for further evaluations.
 
+![Screenshot10](Images/Liver11.png)
+
 -------------------------------------------------------------------------------------------------------------------
 
 **Cell classification** using the measurements obtained from the StarDist
