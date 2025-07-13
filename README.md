@@ -15,8 +15,6 @@ This is the repository for the assessment of tumor immune infiltrate using QuPat
 
 **Color deconvolution** to mitigate stain variabilitis in images
 
-Method 1:
-
 1.1 Draw a small rectangle in an area that is representative of the stain you want to characterize – or the background.
 
 1.2 Double-click on the corresponding stain (or background) under the Image tab and follow the prompts to update the vectors.
@@ -32,6 +30,8 @@ Method 1:
 ```setColorDeconvolutionStains('{"Name" : "H&E adjusted", "Stain 1" : "Hematoxylin", "Values 1" : "0.65 0.70 0.29 ", "Stain 2" : "Eiosin", "Values 2" : "0.27 0.56 0.77 ", "Background" : " 255 255 255 "}');```
 
 -------------------------------------------------------------------------------------------------------------------
+
+**StarDist** for cell detection
 
 
 
