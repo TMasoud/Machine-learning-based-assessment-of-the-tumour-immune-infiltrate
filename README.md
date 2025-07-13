@@ -127,7 +127,7 @@ To apply the trained model on images, you should perform the following steps:
 
 ## **Automating the whole process** using the groovy scripts
 
-For those feeling comfortable using the scripts, the cell classification process can be loaded from the Classify tab -> Object classification -> Load object classifier.
+For those feeling comfortable using the scripts, the provided codes in [`Codes/`](Codes/) folder can be used.
 
 -------------------------------------------------------------------------------------------------------------------
 
