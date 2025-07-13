@@ -109,6 +109,20 @@ After running the StarDist, detected cells can be used to train a cell classifie
 
 -------------------------------------------------------------------------------------------------------------------
 
+## **Testing the trained cell classifier**
+
+To apply the trained model on images, the saved model can be loaded from Classify -> Object classification -> Load object classification.
+
+1. 
+
+-------------------------------------------------------------------------------------------------------------------
+
+## **Automating the whole process** using the groovy scripts
+
+For those feeling comfortable using the scripts, the cell classification process can be loaded from the Classify tab -> Object classification -> Load object classifier.
+
+-------------------------------------------------------------------------------------------------------------------
+
 ## **Citing our work**
 
 If you use our codes, please cite our work as follows:
