@@ -1,11 +1,38 @@
 # Machine-learning-based-assessment-of-the-tumour-immune-infiltrate
-This is the repository for the assessment of tumor immune infiltrate using QuPath
+This is the repository for the assessment of tumor immune infiltrate using QuPath.
 
-A: Project preparation
-Step A1: Download and install the QuPath on your system from here: https://qupath.github.io/
+### **Project preparation**
 
-Step A2: Create a QuPath project. You can find the instructions here: https://qupath.readthedocs.io/en/stable/docs/tutorials/projects.html#create-a-project
+**Step 1**: Download and install the QuPath on your system from here: https://qupath.github.io/
 
-Step A3: Annotate the image areas (https://qupath.readthedocs.io/en/stable/docs/tutorials/cell_detection.html#annotate-a-region-of-interest) or load the annotation files
+**Step 2**: Create a QuPath project. You can find the instructions here: https://qupath.readthedocs.io/en/stable/docs/tutorials/projects.html#create-a-project
 
-Step A4: Save the project for the further analysis
+**Step 3**: Annotate the image areas (https://qupath.readthedocs.io/en/stable/docs/tutorials/cell_detection.html#annotate-a-region-of-interest) or load the annotation files
+
+**Step 4**: Save the project for the further analysis.
+
+
+#### NB: To apply any method or algorithm in QuPath one can use either the GUI or scripts. However, the use of scripts for processing the projects is recommended. In the following sections, for each step, both methods are provided for interested readers.
+
+
+**Color deconvolution** to mitigate stain variabilitis in images
+
+Method 1:
+
+1.1 Draw a small rectangle in an area that is representative of the stain you want to characterize – or the background.
+
+1.2 Double-click on the corresponding stain (or background) under the Image tab and follow the prompts to update the vectors.
+
+1.3 Repeat this for other stains if needed.
+
+1.4 Use Analyze -> Preprocessing -> Estimate stain vectors. This records stain vectors in the command history.
+
+1.5 Now, we can generate a script that applies the color deconvolution to all images in the project. To use the script, click on Automate tab -> script editor and use the obtained values like the commands below:
+
+```setImageType('BRIGHTFIELD_H_DAB');```
+
+```setColorDeconvolutionStains('{"Name" : "H&E adjusted", "Stain 1" : "Hematoxylin", "Values 1" : "0.65 0.70 0.29 ", "Stain 2" : "Eiosin", "Values 2" : "0.27 0.56 0.77 ", "Background" : " 255 255 255 "}');```
+
+
+
+
