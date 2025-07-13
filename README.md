@@ -31,7 +31,7 @@ This is the repository for the assessment of tumor immune infiltrate using QuPat
 
 -------------------------------------------------------------------------------------------------------------------
 
-**StarDist** for cell detection
+**StarDist** for cell detection and segmentation
 
 1. Download and install the StarDist extension for QuPath from here: https://github.com/qupath/qupath-extension-stardist
 
@@ -41,9 +41,33 @@ This is the repository for the assessment of tumor immune infiltrate using QuPat
 
 ##### **QuPath’s StarDist support is only available by scripting.**
 
-3. 
+3. Select the region you want to perform cell detection and segmentation. It can be one or more boxes, circles, or annotated regions in the image.
+
+4. Run the StarDist script. The following code can be used for H&E-stained images and more examples can be found here: https://qupath.readthedocs.io/en/0.4/docs/deep/stardist.html.
+
+```import qupath.ext.stardist.StarDist2D
+
+// Specify the model file (you will need to change this!)
+def pathModel = '/path/to/he_heavy_augment.pb'
+
+def stardist = StarDist2D.builder(pathModel)
+      .threshold(0.5)              // Prediction threshold
+      .normalizePercentiles(1, 99) // Percentile normalization
+      .pixelSize(0.5)              // Resolution for detection
+      .build()
+
+// Run detection for the selected objects
+def imageData = getCurrentImageData()
+def pathObjects = getSelectedObjects()
+if (pathObjects.isEmpty()) {
+    Dialogs.showErrorMessage("StarDist", "Please select a parent object!")
+    return
+}
+stardist.detectObjects(imageData, pathObjects)
+println 'Done!'```
 
 
+AAA
 
 
 
