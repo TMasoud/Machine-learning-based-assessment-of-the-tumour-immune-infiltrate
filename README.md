@@ -2,7 +2,7 @@
 
 This is the repository for the assessment of tumor immune infiltrate using QuPath.
 
-### **Project preparation**
+## **Project preparation**
 
 **Step 1**: Download and install the QuPath on your system from here: https://qupath.github.io/
 
@@ -14,7 +14,7 @@ This is the repository for the assessment of tumor immune infiltrate using QuPat
 
 -------------------------------------------------------------------------------------------------------------------
 
-### **Color deconvolution** to mitigate stain variabilitis in images
+## **Color deconvolution** to mitigate stain variabilitis in images
 
 1. Draw a small rectangle in an area that is representative of the stain you want to characterize – or the background.
 
@@ -42,7 +42,7 @@ This is the repository for the assessment of tumor immune infiltrate using QuPat
 
 -------------------------------------------------------------------------------------------------------------------
 
-**StarDist** for cell detection and segmentation
+## **StarDist** for cell detection and segmentation
 
 1. Download and install the StarDist extension for QuPath from here: https://github.com/qupath/qupath-extension-stardist
 
@@ -89,7 +89,7 @@ println 'Done!'
 
 -------------------------------------------------------------------------------------------------------------------
 
-**Cell classification** using the measurements obtained from the StarDist
+## **Training the Cell classifier** using the measurements obtained from the StarDist
 
 After running the StarDist, detected cells can be used to train a cell classifier.
 
