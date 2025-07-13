@@ -13,7 +13,7 @@ This is the repository for the assessment of tumor immune infiltrate using QuPat
 
 -------------------------------------------------------------------------------------------------------------------
 
-**Color deconvolution** to mitigate stain variabilitis in images
+## **Color deconvolution** to mitigate stain variabilitis in images
 
 1. Draw a small rectangle in an area that is representative of the stain you want to characterize – or the background.
 
