@@ -68,4 +68,6 @@ stardist.detectObjects(imageData, pathObjects)
 println 'Done!'
 ```
 
-AAA
+5. Measurements can be exported from the Measure tab -> Show annotation/detection measurements for further evaluations.
+
+6. 
