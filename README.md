@@ -15,15 +15,15 @@ This is the repository for the assessment of tumor immune infiltrate using QuPat
 
 **Color deconvolution** to mitigate stain variabilitis in images
 
-1.1 Draw a small rectangle in an area that is representative of the stain you want to characterize – or the background.
+1. Draw a small rectangle in an area that is representative of the stain you want to characterize – or the background.
 
-1.2 Double-click on the corresponding stain (or background) under the Image tab and follow the prompts to update the vectors.
+2. Double-click on the corresponding stain (or background) under the Image tab and follow the prompts to update the vectors.
 
-1.3 Repeat this for other stains if needed.
+3. Repeat this for other stains if needed.
 
-1.4 Use Analyze -> Preprocessing -> Estimate stain vectors. This records stain vectors in the command history.
+4. Use Analyze -> Preprocessing -> Estimate stain vectors. This records stain vectors in the command history.
 
-1.5 Now, we can generate a script that applies the color deconvolution to all images in the project. To use the script, click on Automate tab -> script editor and use the obtained values like the commands below:
+5. Now, we can generate a script that applies the color deconvolution to all images in the project. To use the script, click on Automate tab -> script editor and use the obtained values like the commands below:
 
 ```setImageType('BRIGHTFIELD_H_DAB');```
 
@@ -32,6 +32,26 @@ This is the repository for the assessment of tumor immune infiltrate using QuPat
 -------------------------------------------------------------------------------------------------------------------
 
 **StarDist** for cell detection
+
+1. Download and install the StarDist extension for QuPath from here: https://github.com/qupath/qupath-extension-stardist
+
+2. To use the StarDist, click on Extensions tab in QuPath -> StarDist -> select the proper model for your task.
+
+  **NB: Each model has its own individual jar file that should be downloaded before using the StartDist.**
+
+3. 
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
