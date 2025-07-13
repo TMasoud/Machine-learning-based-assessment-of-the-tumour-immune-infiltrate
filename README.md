@@ -111,9 +111,17 @@ After running the StarDist, detected cells can be used to train a cell classifie
 
 ## **Testing the trained cell classifier**
 
-To apply the trained model on images, the saved model can be loaded from Classify -> Object classification -> Load object classification.
+To apply the trained model on images, you should perform the following steps:
 
-1. 
+1. Select the regions.
+
+2. Run the StarDist to detect cells.
+
+3.  Load the saved model from Classify -> Object classification -> Load object classification.
+
+![Screenshot14](Images/Liver14.png)
+
+4. Export the results. 
 
 -------------------------------------------------------------------------------------------------------------------
 
