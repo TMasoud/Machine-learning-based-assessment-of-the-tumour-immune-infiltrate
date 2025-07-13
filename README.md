@@ -95,6 +95,8 @@ After running the StarDist, detected cells can be used to train a cell classifie
 1. To start, click on the Classify tab -> Object classification -> Train object classification
 (In the pop-up window, many options like three different algorithms, features for classification, number of classes, etc, can be selected for the model training.)
 
+![Screenshot12](Images/Liver12.png)
+
 2. Annotate the detected cells using the available tools like brush, wand, etc in QuPath.
 
 3. Save the classifier.
