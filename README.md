@@ -21,15 +21,23 @@ This is the repository for the assessment of tumor immune infiltrate using QuPat
 
 2. Double-click on the corresponding stain (or background) under the Image tab and follow the prompts to update the vectors.
 
+![Screenshot3](Images/Liver3.png)
+
 3. Repeat this for other stains if needed.
 
 4. Use Analyze -> Preprocessing -> Estimate stain vectors. This records stain vectors in the command history.
+
+![Screenshot4](Images/Liver4.png)
+
+![Screenshot5](Images/Liver5.png)
 
 5. Now, we can generate a script that applies the color deconvolution to all images in the project. To use the script, click on Automate tab -> script editor and use the obtained values like the commands below:
 
 ```setImageType('BRIGHTFIELD_H_DAB');```
 
 ```setColorDeconvolutionStains('{"Name" : "H&E adjusted", "Stain 1" : "Hematoxylin", "Values 1" : "0.65 0.70 0.29 ", "Stain 2" : "Eiosin", "Values 2" : "0.27 0.56 0.77 ", "Background" : " 255 255 255 "}');```
+
+![Screenshot6](Images/Liver6.png)
 
 -------------------------------------------------------------------------------------------------------------------
 
