@@ -37,7 +37,7 @@ This is the repository for the assessment of tumor immune infiltrate using QuPat
 
 2. To use the StarDist, click on Extensions tab in QuPath -> StarDist -> select the proper model for your task.
 
-##### **NB: Each pretrained model has its own individual .pb file that should be downloaded before using the StartDist.**
+##### **Each pretrained model has its own individual .pb file that should be downloaded before using the StartDist.**
 
 ##### **QuPath’s StarDist support is only available by scripting.**
 
@@ -45,7 +45,8 @@ This is the repository for the assessment of tumor immune infiltrate using QuPat
 
 4. Run the StarDist script. The following code can be used for H&E-stained images and more examples can be found here: https://qupath.readthedocs.io/en/0.4/docs/deep/stardist.html.
 
-```import qupath.ext.stardist.StarDist2D
+```
+import qupath.ext.stardist.StarDist2D
 
 // Specify the model file (you will need to change this!)
 def pathModel = '/path/to/he_heavy_augment.pb'
@@ -64,22 +65,7 @@ if (pathObjects.isEmpty()) {
     return
 }
 stardist.detectObjects(imageData, pathObjects)
-println 'Done!'```
-
+println 'Done!'
+```
 
 AAA
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
