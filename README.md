@@ -17,7 +17,7 @@ This is the repository for the assessment of tumor immune infiltrate using QuPat
 
 1. Draw a small rectangle in an area that is representative of the stain you want to characterize – or the background.
 
-
+![Screenshot1](Images/Liver2.png)
 
 2. Double-click on the corresponding stain (or background) under the Image tab and follow the prompts to update the vectors.
 
