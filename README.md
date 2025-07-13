@@ -13,9 +13,6 @@ This is the repository for the assessment of tumor immune infiltrate using QuPat
 
 -------------------------------------------------------------------------------------------------------------------
 
-#### NB: To apply any function or algorithm in QuPath one can use either the GUI or scripts. However, the use of scripts for processing the projects is recommended. In the following sections, for each step, both methods are provided for interested readers.
-
-
 **Color deconvolution** to mitigate stain variabilitis in images
 
 Method 1:
@@ -33,6 +30,9 @@ Method 1:
 ```setImageType('BRIGHTFIELD_H_DAB');```
 
 ```setColorDeconvolutionStains('{"Name" : "H&E adjusted", "Stain 1" : "Hematoxylin", "Values 1" : "0.65 0.70 0.29 ", "Stain 2" : "Eiosin", "Values 2" : "0.27 0.56 0.77 ", "Background" : " 255 255 255 "}');```
+
+-------------------------------------------------------------------------------------------------------------------
+
 
 
 
