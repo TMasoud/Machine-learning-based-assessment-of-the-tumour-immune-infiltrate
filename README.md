@@ -53,6 +53,8 @@ This is the repository for the assessment of tumor immune infiltrate using QuPat
 
 3. Select the region you want to perform cell detection and segmentation. It can be one or more boxes, circles, or annotated regions in the image.
 
+![Screenshot7](Images/Liver7.png)
+
 4. Run the StarDist script. The following code can be used for H&E-stained images and more examples can be found here: https://qupath.readthedocs.io/en/0.4/docs/deep/stardist.html.
 
 ```
@@ -77,6 +79,8 @@ if (pathObjects.isEmpty()) {
 stardist.detectObjects(imageData, pathObjects)
 println 'Done!'
 ```
+
+![Screenshot8](Images/Liver8.png) ![Screenshot9](Images/Liver9.png) ![Screenshot10](Images/Liver10.png)
 
 5. Measurements can be exported from the Measure tab -> Show annotation/detection measurements for further evaluations.
 
