@@ -37,7 +37,9 @@ This is the repository for the assessment of tumor immune infiltrate using QuPat
 
 2. To use the StarDist, click on Extensions tab in QuPath -> StarDist -> select the proper model for your task.
 
-  **NB: Each model has its own individual jar file that should be downloaded before using the StartDist.**
+  **NB: Each pretrained model has its own individual .pb file that should be downloaded before using the StartDist.**
+
+  **QuPath’s StarDist support is only available by scripting.**
 
 3. 
 
