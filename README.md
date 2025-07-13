@@ -109,15 +109,15 @@ After running the StarDist, detected cells can be used to train a cell classifie
 
 -------------------------------------------------------------------------------------------------------------------
 
-
-  
 ## **Citing our work**
 
 If you use our codes, please cite our work as follows:
 
 Rakaee M, Adib E, Ricciuti B, Sholl LM, Shi W, Alessi JV, et al. Association of Machine Learning-Based Assessment of Tumor-Infiltrating Lymphocytes on Standard Histologic Images With Outcomes of Immunotherapy in Patients With NSCLC. JAMA Oncol 2022.
 
+-------------------------------------------------------------------------------------------------------------------
 
+We hope this information helps you replicate the method we have used. If you have any questions, please do not hesitate to contact us.
 
 
 
