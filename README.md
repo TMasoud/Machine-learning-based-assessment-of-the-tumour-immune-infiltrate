@@ -1,4 +1,5 @@
-# Machine-learning-based-assessment-of-the-tumour-immune-infiltrate
+# Machine learning based assessment of the tumour immune infiltrate
+
 This is the repository for the assessment of tumor immune infiltrate using QuPath.
 
 ### **Project preparation**
@@ -97,7 +98,9 @@ After running the StarDist, detected cells can be used to train a cell classifie
 
 ![Screenshot12](Images/Liver12.png)
 
-2. Annotate the detected cells using the available tools like brush, wand, etc in QuPath.
+2. Annotate the detected cells using the available tools like brush, wand, etc in QuPath. Annotating more instances leads to more accurate classifiers. 
+
+![Screenshot13](Images/Liver13.png)
 
 3. Save the classifier.
 
