@@ -168,11 +168,17 @@ To visualize feature importance in cell classification, you can run the Jupyter 
 
 -------------------------------------------------------------------------------------------------------------------
 
-## **Citing our work**
+## **Citation**
 
-If you use our codes, please cite our work as follows:
+If you use QuPath, StarDist, and our codes, please cite the corresponding studies:
+
+Bankhead P, Loughrey MB, Fernandez JA, Dombrowski Y, McArt DG, Dunne PD, et al. QuPath: Open source software for digital pathology image analysis. Sci Rep 2017;7:16878.
+
+Schmidt U, Weigert M, Broaddus C, Myers G. Cell Detection with Star-Convex Polygons. In: Frangi AF, Schnabel JA, Davatzikos C, Alberola-López C, Fichtinger G, editors. Medical Image Computing and Computer Assisted Intervention – MICCAI 2018; 2018 2018//; Cham: Springer International Publishing; 2018. p. 265-273.
 
 Rakaee M, Adib E, Ricciuti B, Sholl LM, Shi W, Alessi JV, et al. Association of Machine Learning-Based Assessment of Tumor-Infiltrating Lymphocytes on Standard Histologic Images With Outcomes of Immunotherapy in Patients With NSCLC. JAMA Oncol 2022.
+
+Bernhard Scheiner, et al. Preliminary qualification of a machine learning-based assessment of the tumour immune infiltrate as a predictor of outcome in patients with hepatocellular carcinoma treated with atezolizumab plus bevacizumab. XXX, 2025. 
 
 -------------------------------------------------------------------------------------------------------------------
 
