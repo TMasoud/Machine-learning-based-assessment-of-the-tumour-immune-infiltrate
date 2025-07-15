@@ -106,9 +106,9 @@ After running the StarDist, detected cells can be used to train a cell classifie
 
 3. Save the classifier.
 
-##### **Multiple ROIs can be added for training by "Load training" option.**
+##### **Multiple ROIs can be added for training by "Load training" option. Alternatively, a single composite training image can be generated via Classify -> Training images -> Create training image, and annotation and training can then be performed on this composite image. **
 ##### **In this step, in addition to extracted features from the StarDist, extra features can be added from the Analyze tab -> Calculate features -> Add smoothed/intensity/shape features.**
-#### **In this study, we used the following script to add extra features to our cell classifier model**
+##### **In this study, we used the following script to add extra features to our cell classifier model**
 
 ```
 selectDetections();
@@ -119,6 +119,27 @@ selectAnnotations();
 runPlugin('qupath.lib.plugins.objects.SmoothFeaturesPlugin', '{"fwhmMicrons": 50.0,  "smoothWithinClasses": false,  "useLegacyNames": false}');
 selectAnnotations();
 runPlugin('qupath.lib.plugins.objects.SmoothFeaturesPlugin', '{"fwhmMicrons": 100.0,  "smoothWithinClasses": false,  "useLegacyNames": false}');
+```
+
+We used the following parameters and features for the training,
+
+```
+Algorithm: Random Forest
+Parameters:
+  - max_depth = 25
+  - min_samples = 5
+  - max_trees = 100
+  - active_vars = 10
+
+Features:
+  - RGB values
+  - Hematoxylin intensity
+  - Eosin intensity
+  - Multiscale sigma features (σ = 1, 2, 4, 8)
+  - Texture descriptors:
+      - Laplacian
+      - Gradient magnitude
+      - Weighted deviation
 ```
 
 -------------------------------------------------------------------------------------------------------------------
