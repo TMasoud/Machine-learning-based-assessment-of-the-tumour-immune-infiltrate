@@ -67,7 +67,7 @@ import qupath.ext.stardist.StarDist2D
 def pathModel = '/path/to/he_heavy_augment.pb'
 
 def stardist = StarDist2D.builder(pathModel)
-      .threshold(0.5)              // Prediction threshold
+      .threshold(0.3)              // Prediction threshold (0.3 worked best in our experiments)
       .normalizePercentiles(1, 99) // Percentile normalization
       .pixelSize(0.5)              // Resolution for detection
       .build()
