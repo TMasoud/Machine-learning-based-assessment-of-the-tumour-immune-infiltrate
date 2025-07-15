@@ -107,7 +107,7 @@ After running the StarDist, detected cells can be used to train a cell classifie
 3. Save the classifier.
 
 ##### **Multiple ROIs can be added for training by "Load training" option.**
-##### **In addition to extracted features from the StarDist, extra features can be added from the Analyze tab -> Calculate features -> Add smoothed/intensity/shape features.**
+##### **In this step, in addition to extracted features from the StarDist, extra features can be added from the Analyze tab -> Calculate features -> Add smoothed/intensity/shape features.**
 
 -------------------------------------------------------------------------------------------------------------------
 
