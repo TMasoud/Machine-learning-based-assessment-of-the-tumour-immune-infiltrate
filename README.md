@@ -164,6 +164,8 @@ To apply the trained model on images, you should perform the following steps:
 
 For those feeling comfortable using the scripts, the provided codes in [`Codes/`](Codes/) folder can be used.
 
+To visualize feature importance in cell classification, you can run the Jupyter notebook located in [`Codes/`](Codes/) folder in Python.
+
 -------------------------------------------------------------------------------------------------------------------
 
 ## **Citing our work**
