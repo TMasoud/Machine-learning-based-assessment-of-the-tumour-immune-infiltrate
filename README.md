@@ -108,6 +108,18 @@ After running the StarDist, detected cells can be used to train a cell classifie
 
 ##### **Multiple ROIs can be added for training by "Load training" option.**
 ##### **In this step, in addition to extracted features from the StarDist, extra features can be added from the Analyze tab -> Calculate features -> Add smoothed/intensity/shape features.**
+#### **In this study, we used the following script to add extra features to our cell classifier model**
+
+```
+selectDetections();
+runPlugin('qupath.lib.algorithms.IntensityFeaturesPlugin', '{"pixelSizeMicrons": 0.5,  "region": "ROI",  "tileSizeMicrons": 25.0,  "colorOD": true,  "colorStain1": true,  "colorStain2": true,  "colorStain3": true,  "colorRed": true,  "colorGreen": true,  "colorBlue": true,  "colorHue": true,  "colorSaturation": true,  "colorBrightness": true,  "doMean": true,  "doStdDev": true,  "doMinMax": true,  "doMedian": true,  "doHaralick": true,  "haralickDistance": 1,  "haralickBins": 32}');
+selectAnnotations();
+runPlugin('qupath.lib.plugins.objects.SmoothFeaturesPlugin', '{"fwhmMicrons": 25.0,  "smoothWithinClasses": false,  "useLegacyNames": false}');
+selectAnnotations();
+runPlugin('qupath.lib.plugins.objects.SmoothFeaturesPlugin', '{"fwhmMicrons": 50.0,  "smoothWithinClasses": false,  "useLegacyNames": false}');
+selectAnnotations();
+runPlugin('qupath.lib.plugins.objects.SmoothFeaturesPlugin', '{"fwhmMicrons": 100.0,  "smoothWithinClasses": false,  "useLegacyNames": false}');
+```
 
 -------------------------------------------------------------------------------------------------------------------
 
